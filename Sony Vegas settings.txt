@@ -1,0 +1,121 @@
+Make sure you apply these settings correctly to render high quality videos on Youtube
+
+720P Settings
+
+Project Properties
+(Video)
+Template: YouTube HD 720p (1280x720, 30 fps) (1440x1080, 25.000 fps)
+Width: 1280
+Height: 720
+Field order: None (progressive scan)
+Pixel aspect ratio: 1.0000 (Square)
+Output rotation: 0 (original)
+Frame rate: 29.970 (NTSC)
+Pixel Format: 8-bit
+Full-resolution rendering quality: Best
+Motion blur type: Gaussian
+Deinterlace method: None
+Resample mode: Disable resample
+Adjust source media to better match project or render setttings: Check
+Start all new projects with these settings: Check (this will make you not input these settings again on new projects)
+
+(Audio)
+Master bus mode: Stereo
+Number of stereo busses: 0
+Sample rate (Hz): 48,000
+Bit depth: 16
+Resample and stretch quality; Best
+
+(Ruler)
+Ruler time format: SMPTE Drop (29.97 fps, Video)
+Ruler start time: 00:00:00:00
+Beats per minute: 120.000
+Beats per measure: 4
+Note that gets one beat: Quarter
+
+
+Render Settings 720P
+Sony AVC/MVC (*.mp4) <-- MP4 SETTING
+(Project)
+Template: YouTube 720p
+Video rendering quality: Best
+
+(Audio)
+Include audio: Check
+Audio format: AAC
+Sample rate: 48,000
+Bit rate: 128,000
+Audio coding mode: Stereo
+
+(Video)
+Video Format: AVC
+Frame Size: High Definition (1280x720)
+Profile: High
+Entropy coding: CABAC
+Frame rate (fps): 29.970 (NTSC)
+Field Order: None
+Pixel aspect ratio: 1.0000
+Bit rate: 16,000,000
+Number of slices: 1
+
+1080p Settings
+
+Video
+
+Template: YouTube 1080p
+Width: 1,920
+Height: 1,080
+Field Order: None
+Pixel Aspect Ratio: 1.0000 (Square)
+Output rotation: 0
+Frame rate: 29.970 (NTSC)
+Pixel Format: 8-bit
+Full-resolution rendering quality: Best
+Motion blur type: Gaussian
+Deinterlace method: None
+Resample mode: Disable resample
+Adjust source media to better match project or render setttings: Check
+Start all new projects with these settings: Check (this will make you not input these settings again on new projects)
+
+Audio
+
+Master bus mode: stereo
+Number of stereo bussess: 0
+Sample rate: 48,000
+Bit depth: 16
+Resample and stretch quality: Best
+
+Ruler
+
+Rule time format: SMPTE Drop (29.97 fps, Video)
+Beats per minute: 120.000
+Beats per minute: 4
+Note that gets one beat: Quarter
+
+Rendering Settings (1080p)
+
+Template YouTube 1080p
+Include video: Check
+Video format: AVC
+Frame size: HD (1920x1080)
+Allow source to adjust frame size: Uncheck
+Profile: High
+Entropy coding: CABAC
+Frame rate: 29.970 (NTSC)
+Allow source to adjust frame rate: Uncheck
+Field order: None
+Pixel aspect ratio: 1.0000
+Bit rate: 16,000,000
+Number of slices: 1
+
+Audio
+Include Audio: Check
+Audio format: AAC
+Sample rate: 48,000
+bit rate: 320,000
+Audio coding mode: Stereo
+
+Project
+Video rendering quality: Best
+Stereoscopic 3D Mode: Use project settings
+Color Space: Default
