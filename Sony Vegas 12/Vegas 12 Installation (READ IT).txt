@@ -1,0 +1,16 @@
+Install the program. Do not open!
+
+If you are using 10 version, use Vegas Pro 12 Patch for Windows 8 file! It might work.
+
+Extract the Patch RAR file
+
+Go to the file location of Vegas 12 (Right click Vegas 12 application you installed, click Properties, click open file location) 
+
+Drag Vegas Pro 12 Patch.exe file to the Vegas Pro 12.0 folder (depending on the windows version you're using).
+
+Open the application, you'll get a pop up window of a woman, click patch. If you see OK, close the program and you're ready to use Vegas 12.
+
+
+NOTE: If you get the End User License Agreement, just click Agree. This happens to me a lot of time. It still works. 
+Enjoy the upgrade version of Sony Vegas. You now have acess to new features than Vegas 8! :) (Though I recommend buying the program
+because piracy is bad...)
