@@ -1,0 +1,11 @@
+CMTP is my new patching format that only contains character data.
+
+You can patch it to any ROM that is 64MB in size, or the original 8MB ROM (no Decomp)
+
+Mobile people at the date of writing still cannot use CMTP. Use BPS instead. Sorry!
+
+If you want to use the CMTP, download the CometCHAR Patcher at
+
+https://github.com/projectcomet64/CometCHAR/releases/latest
+
+The BPS also has a chroma key room at stage 25 in Level Select which has a texture you can load with the video plugin to have any chroma color.

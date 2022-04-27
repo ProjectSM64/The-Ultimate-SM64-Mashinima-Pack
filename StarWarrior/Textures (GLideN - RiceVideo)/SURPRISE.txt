@@ -1,0 +1,1 @@
+SURPRISE! This mod is 100% compatible with Mario's old face textures if you use RiceVideo or GLideN in RiceVideo texture mode. You don't need to have separate textures!
