@@ -14,7 +14,7 @@ Heres what it includes:
  - GlitchyPSI's Old Eyepack
  - XStudio MINI
  - CometCHAR Patcher (CMTP Patcher)
-- Sony Vegas 12
+
  
 - SM64 ROM Manager
 - ROM Files
