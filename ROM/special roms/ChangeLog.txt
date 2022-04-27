@@ -1,0 +1,156 @@
+UPDATE(05/11/2015) - Fixed include crash GUI error
+[FIX]: Fixed immediate crash when including an ASM or bin file from another folder outside of CajeASM.exe
+[FIX]: After incbin the code is auto-aligned to 4 byte boundary so ASM code is not messed up when assembling.
+
+------------------
+------------------
+UPDATE(05/09/2015) - Fixed leading zero define error
+[FIX]: Fixed leading zero define error (for example loading lower half 0x0928 as 0x9280, which is wrong)
+
+------------------
+------------------
+UPDATE(04/29/2015) - Pseudo-Branches
+[FIX]: BLT, BGT, BLE, BGE didn't assemble correctly (they assembled R0, R0, offset, which was wrong)
+
+------------------
+------------------
+UPDATE(04/12/2015) - Fix
+[FIX]: Counters, Labels, Vars resetted and cleared once assemble process is done. 
+       - The errors you eventually have occured recently like branching errors were
+         caused because the counter was not reset. It's finally fixed now.
+
+------------------
+------------------
+UPDATE(04/06/2015) - Little add
+[ADD]: CajeASM GUI restores latest location you selected files from.
+
+-------------------
+-------------------
+UPDATE(04/05/2015) - Fix
+[IMPR]: Recoded and improved errors in code, writes errors now to a log file. (Logs/log.txt) Label and define errors are saved in two separate log files in Logs folder.
+[IMPR]: CajeASM assembles 12 secs faster than before. 
+[ADD]: CajeASM is now able to assemble ASM code to big-endian (.z64), little-endian (.v64) and byteswapped/middle-endian (.n64). 
+[ADD]: Added new directives:
+       .incbin "binfile.bin" -> Let's you include binary files into your ASM code.
+       .byte/.halfword/.word/.float -> Let's you insert numeric values into your code.
+       .align alignment, (optional) fill -> Aligns your data/code to a byte boundary, optionally filling the skipped bytes with 'fill'.
+       .skip n, fill -> skips 'n' bytes, optionally filling them with 'fill'.
+[FIX]: Fixed decimal, binary value conversion.
+[FIX]: Fixed LI instruction to not use ADDI/ADDIU anymore for values which are in 16-bit range. 
+[FIX]: Fixed crashes caused if the immediate value didn't have a prefix or was too short. 
+[FIX]: Re-added missing instruction SYSCALL. 
+[FIX]: Rewritten label/define list code. This time it should work better and more efficient now and prevent mystical label errors.
+[ADD]: New command-line options, new command-line argument parser.
+[IMPR]: If no destination register is specified in pseudo-branch instructions, then on default AT register is used.
+[FIX]: Fixed MTC2/MFC2 (RSP) instructions not reading the element. (ex.: mtc2 t0, v3[2])
+[FIX]: Fixed vector load/store instructions not reading the address properly. 
+[ADD]: New CajeASM v7.0+ Manual. Better, explains all pseudo-stuff step-for-step and shows how they look like when translated to real MIPS code.
+[FIX]: ROM and ASM Files close properly now.
+[FIX]: include directive for ASM files didn't work properly before and didn't import all defines. 
+[FIX]: hex {} parser/lexer error and confusing it with labels. Has been finally fixed.
+[FIX]: CajeASM v6.03 crashed when labels were called three times.
+[DEL+REPL]: (internal) cajeASM inverted modulo of irreducible polynomial. (f=(x-k1)^v1 * (x-k2)^v2 * ... *(x-ks)^s * q) God fucking damn. (originally this was supposed to be a small, quick reader (encoding) for ASM code, fucked up crap which never worked in the end. This was replaced with an algorithm somewhat similiar to ( w(v') >= t + 1) )
+[FIX]: Closing CajeASM console-command line by pressing "X" caused that rn64crc.exe and chksum64.exe didn't open. 
+[FIX]: CajeASM update checker sometimes didn't read the URL.
+[FIX]: Fixed prefixes like "0X" not being recognized (forgot to uppercase that one in my check code)
+[FIX]: Fixed inefficient use of my BitFields (some fields were left filled with bits of preceding instructions, sometimes causing horribly wrong instruction encodings)
+[FIX]: Fixed instruction reader and code which passes the bits to it's fields, especially the FPU instructions were sometimes not written properly.
+[FIX]: CajeASM GUI no longer crashes if file is in use (actually it shouldn't even crash before, but it still did for some others. )
+[FIX]: BEQI/BNEI and BGEI/BLEI/BLTI/BGTI not being correctly translated. Fixed this finally.
+[FIX]: Lexer errors sometimes crashed CajeASM, especially LI instructions once again.
+[FIX]: Result of MIPS instructions (Appending BitFields) sometimes were out of range (leading zero's) causing errors.
+[FIX]: Fixed CajeASM GUI being not properly getting the filepath sometimes (when space was used in filenames). 
+[FIX]: include directive for ASM files sometimes didn't assemble some instructions (forgot to point to visitor, blame me)
+[FIX]: CajeASM didn't read RSP instructions properly sometimes (especially the scalar modes)
+[IMPR]: Re-coded reader for scalar modes for RSP instructions (0q, 1q, 0h, 1h, 2h, 3h, 0w-7w) 
+[FIX]: Removed "URL not found" spam. (caused when link wasn't available or when some crap was wrong with the host)
+[FIX]: Fixed crash when attempting to open a zero byte file.
+[FIX]: Fixed various memory corruption issues (random crashing) 
+[FIX]: Fixed parser not recognizing RSP instruction VSUB. 
+[FIX]: Fixed endless loop if define didn't exist.
+[FIX]: Fixed B instruction not being translated correctly to real MIPS ASM instruction.
+[IMPR]: CajeASM GUI and CajeASM console-application merged to one. 
+
+
+------------------
+------------------
+UPDATE(03/07/2015) - Fix
+[FIX]: Labels, Variables from included ASM files are now properly imported.
+
+------------------
+------------------
+UPDATE(02/28/2015) - Addition
+[ADD]: CajeASM tells now where assembled code ends. (Included and normal asm file)
+
+-------------------
+-------------------
+UPDATE(02/20/2015) - Quick Patch Fix!
+[FIX]: Label Counter unaligned.
+[FIX]: Undefined Labels didn't error and CajeASM GUI just closed without leaving any note to the user.
+[FIX]: FPU Branch Instruction didn't recover labelindex which caused CajeASM to suddenly stop and crash.
+
+-------------------
+-------------------
+UPDATE(02/20/2015):
+[ADD]: Added RSP ASM Instruction Set.
+[FIX]: Error when using more than 3 or 4 labels.
+[FIX]: Some instructions not recognizing lowercased registers.
+[FIX]: A lot of BitField errors (blame me)
+[FIX]: Read/Write Error when including an asm file which includes asm files too which also include asm files. (lol)
+[FIX]: Unclosed FileStreams; Sometimes caused some code not to be written. (blame me^2)
+[FIX]: Counter error; didn't properly count the value out of range errors.
+[FIX]: CajeASM sometimes didn't properly open rn64crc and chksum64 and so didn't fix the checksum.
+[IMP]: Improved speed of CajeASM and use Streams properly now to save RAM. (Fastz)
+
+-------------------
+-------------------
+UPDATE(03/01/2015):
+[FIX]: Base Instructions Instructions (LH, SH, LB, SB, LW, SW, etc.) couldn't take shortened values. 
+(if you wrote 0x0, then CajeASM didn't recognize it)
+
+-------------------
+-------------------
+UPDATE(02/01/2015):
+[FIX]: Labels being unaligned (missing 4 in counter) and branching wrong.
+[FIX]: Include path not correctly specified. 
+
+-------------------
+-------------------
+UPDATE(01/01/2015):
+[ADD]: .include directive, which let's you allow to include other asm files to your main asm file. It also imports labels and variables/defines.
+[ADD]: Defines are now handled properly when load with LUI. LUI only loads the upper half of the define, while all other lower half instructions like ADDIU, ORI, etc. load the lower half of the define.
+[FIX]: Comments won't get messed up anymore. 
+[DEL]: Labels no longer need to be prefixed with a "!" token. 
+[ADD]: New Pseudo-Instructions: BEQI, BNEI, BGTI, BLEI, BGEI, BLTI. 
+[ADD]: A complete rewritten and up-to date CajeASM Manual.
+
+-------------------
+-------------------
+UPDATE(12/23/2014):
+* LI supports defines now.
+
+* SUBI/SUBIU instructions (can also be used with defines)
+
+* ErrorListener errors when immediate instructions are out of the 16-bit range. 
+
+  LI errors when going over the 32-bit range. 
+
+* Errors now when shift value is over 0x1F or when you wrote any other bullshit.
+
+* Mini-Fix: Added rn64crc back. Don't delete it.
+
+
+-------------------
+-------------------
+UPDATE(12/21/2014):
+* Improved ErrorListener a lot. Writes now log files in Logs folder.
+
+* Added two new pseudo-opcodes: BEQZ and BNEZ. Basically, they're just:
+	BEQ rs, R0, !Label/BEQ rs, R0, 0xAddress
+	BNE rs, R0, !Label/BNE rs, R0, 0xAddress
+
+* Label Errors in v3.70 are fixed now.
+
+* CajeASM runs on .NET 4.5 now. So download .NET 4.5 Runtime, if you don't have it already.
+
+* rn64crc is not needed anymore. chksum64 does it's job pretty good.

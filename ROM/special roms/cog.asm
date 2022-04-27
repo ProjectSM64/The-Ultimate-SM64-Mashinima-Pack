@@ -1,0 +1,10 @@
+.org 0xc28b0
+LUI T2, 0x8036
+LW T2, 0x1160 (T2)
+LW T3, 0xFC (T2)
+LUI T4, 0x4348
+BNE T3, T4, Done
+SW T4, 0xFC (T2)
+LUI T5, 0xC348
+SW T5, 0xFC (T2)
+Done:

@@ -1,0 +1,14 @@
+{
+  "EnableWireframe": "False",
+  "EnableBackfaceCulling": "False",
+  "DrawObjectModels": "True",
+  "RenderCollisionMap": "False",
+  "AutoLoadROMFile": "False",
+  "LastROMFile": "C:\\Users\\User\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\IFK9ZS5Y\\SUPER_MARIO_64[1].pj",
+  "EnableHex": "False",
+  "SignedHex": "False",
+  "EmulatorPath": "G:\\SM64MachinimaPackDX\\SM64 PACK\\pj64-tilt\\Project64-tilt.exe",
+  "AutoSaveOnLaunchROM": "True",
+  "FieldOfView": "60",
+  "Theme": "./data/themes/dark.json"
+}

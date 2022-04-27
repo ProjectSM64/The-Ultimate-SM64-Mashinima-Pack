@@ -1,0 +1,5 @@
+msb instruction encoding support
+
+Register nicknames flawed, either need annoying defines {t1} {a0} etc or
+repetition of instructions with different register prefixes.
+Using numbers for registers causes collisions with immediates although this might not be an issue with mips specifically.

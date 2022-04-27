@@ -1,0 +1,74 @@
+{
+  "AreaEditor": {
+    "DefaultCameraMode": 1,
+    "RibbonControlExpanded": true,
+    "EnableSlideMovementByDefaultForObjects": false
+  },
+  "General": {
+    "IntegerValueMode": 0,
+    "EmulatorPath": "",
+    "ActionIfUpdatePatches": 0,
+    "AutoScaleMode": 0,
+    "HexEditMode": {
+      "Mode": 0,
+      "CustomPath": ""
+    },
+    "Language": "",
+    "RomChangedNotification": 2,
+    "LastThankYouPageSeen": {
+      "Major": 1,
+      "Minor": 11,
+      "Build": 11,
+      "Revision": 1,
+      "MajorRevision": 0,
+      "MinorRevision": 1
+    },
+    "RecalcChecksumBehavior": 1,
+    "UseInternalBrowser": true,
+    "OpenThankYouFormAfterUpdates": true
+  },
+  "StyleManager": {
+    "AlwaysKeepBlueColors": false,
+    "MetroColorParams": "#FFFFFF, #80397B",
+    "UseWindows10Style": true
+  },
+  "FileParser": {
+    "FileLoaderModule": "#1",
+    "FileExporterModule": "#0",
+    "UpAxis": 0
+  },
+  "RecentFiles": {
+    "RecentROMs": [
+      "C:\\Users\\User\\3D Objects\\FLG6469\\ROM\\Super_Mario_64_(U)_[!]\\Super Mario 64 (U) [!].z64"
+    ],
+    "RecentModelFiles": []
+  },
+  "ModelConverter": {
+    "UseLegacyCollisionDescriptions": false
+  },
+  "JobsToDo": [],
+  "TextManager": {
+    "ForceUpperCaseForActAndLevelNames": true,
+    "AutoDetectStartEndQuotationMarks": true,
+    "AutoFocusEditorTextBox": false
+  },
+  "Network": {
+    "AutoUpdates": true,
+    "MinimumUpdateChannel": 0,
+    "UseAdminRightsForUpdates": false,
+    "ProxyUsername": null,
+    "ProxyPasswordEncrypted": null,
+    "LastUpdateCheck": "2022-04-03T06:02:57.0086521+03:00"
+  },
+  "WindowSettings": {
+    "LevelEditor": {
+      "IsDefault": false,
+      "State": 0,
+      "Location": "0, 0",
+      "Size": "0, 0"
+    }
+  },
+  "LevelManager": {
+    "UseNewGUI": false
+  }
+}

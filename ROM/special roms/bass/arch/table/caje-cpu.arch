@@ -1,0 +1,5 @@
+// Caje Test Instruction Set
+
+arch(caje_cpu) =
+#include "cajeeb/caje1.md"
+;
