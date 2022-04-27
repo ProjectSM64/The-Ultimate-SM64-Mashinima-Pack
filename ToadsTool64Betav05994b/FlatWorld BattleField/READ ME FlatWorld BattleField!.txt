@@ -1,0 +1,53 @@
+*************FlatWorld BattleField*************
+By VL-Tone 2008
+http://homepage.mac.com/qubedstudios/
+qubedstudios@mac.com
+****************************************************
+
+FlatWorld BattleField is brand new empty flat level, replacing Bob Omb's Battlefield in Super Mario 64. It's a first step toward the creation of entirely new levels from scratch. It's available as a .PPF patch, but starting with Toad's Tool 64 version 0.5.95b, THE FLATWORLD LEVEL CAN BE ENABLED WITHOUT THE PATCH. Note that in any case, you need at least version 0.5.95b to be able to open a patched ROM.
+
+*************VERY IMPORTANT NOTES*************
+--> If you want to apply the .PPF patch, only do it on a freshly extended 24MB SM64 ROM (go to http://homepage.mac.com/qubedstudios/Mario64Tools.htm to get the ROM Extender). It won't work on the original 8 MB ROM.
+
+--> While you can open the patched ROM with your favorite N64 emulator, to be able to open and edit the ROM with Toad's Tool 64, YOU NEED THE LATEST VERSION OF TT64, and that would be version 0.5.95b and up (v0.5.9b won't work). It can be downloaded at http://homepage.mac.com/qubedstudios/ToadsTool64.htm
+
+--> You should have some previous experience with TT64 if you want to edit this level.
+***********************************************
+
+If you don't know how to apply a .PPF patch, just use TT64 to enable the level instead.
+
+To enable the level with TT64:
+
+Click on "Preferences..." from the main screen. At the top of the Preferences window, click on the "Enable FlatWorld" button. Note that enabling the FlatWorld level requires reloading the ROM, which will be done automatically. If you have any unsaved changed, you'll get a chance to save. Note that if you click cancel on this dialog, the level will still be enabled, but wont be editable until you reload the ROM.
+
+Disabling the level:
+Click on "Preferences..." from the main screen. At the top of the Preferences window, click on the "Disable FlatWorld" button. Disabling also requires reloading the ROM.
+
+Editing the ROM with TT64:
+
+This level is basically empty except for the Mario Start warp and the 4 original warps found in BBB (Bob Omb's Battlefield). There are no 0x42 or 0x43 objects in this level, instead you get 150 empty 0x24 objects, giving you more flexibility.
+
+To "create" a new object, select one of the grey 0x24 object, then make sure to activate the tiny "Acts stars" for this particular object, or else it will stay invisible in all acts. (Don't use the bigger Act stars widget found at the upper-right corner of the TT64 window, it's only used to select which acts are shown in the editor, it doesn't modify the objects themselves.)
+
+To delete/hide an object, deactivate all the tiny act stars for this particular object.
+
+You can only use the same object combos that were found in the original BBB.
+
+You can edit the grass texture if you want, its texture number is 507.
+
+----------------------------------------------------------------------
+
+If you have some experience in Hex hacking editing, you can take a look at the documents that are included with this patch.
+
+"FlatWorldBattleFieldHexData.txt" 
+Contains all modification done to create this level. It includes addresses and comments. It describes the two main banks that were added in the empty space found at the end of the Extended ROM. One bank contains the Level objects and Geometry Layout commands, while the other contains the polygon and collision commands.
+
+"FlatWorldBattleFieldHexUncommented.txt" 
+Is like the document above, but without comments. You could make a copy of this doc, do some modifications and experiment with it, then copy/paste the data directly into an Hex editor (provided that your Hex Editor is able to filter returns and tab characters). 
+
+"Mario64_HackingDoc1.5.txt"
+The already available Mario 64 hacking document that I made, it may help you understand the meaning and format of commands used in the other documents.
+
+If you make modifications that involve adding or deleting commands and/or changing the size of these new banks, please don't forget to change the appropriate pointers. All pointers referring to this data are included in the data found in the docs. For example, if you decide to add new triangles and vertices to the polygon data, you'll have to change the pointers to the polygon commands (command 0x15), vertices pointers (0x04), color pointers (0x03), the collision data pointer (0x2E) and the 0x17 command pointers to match the new position and size of the various data elements.
+
+Note how the polygon data for the level is really small, as it involve only two triangles. Note that there's a limit of 16 vertices loaded per 0x04 commands. So if you plan to add triangles, you'll eventually have to add new 0x04 commands, with a pointer that sets the base address to the new set of vertices you added. All triangles commands (0xBF) found after a 0x04 command can only access a maximum of 16 vertices found directly after the base address set by the 0x04 command. As such, you may end up having to have duplicate vertices in the vertex list, because a given triangle may need to access vertices that are too far from each other in the list. Optimization of triangle/vertices chunks data is a puzzle I'm trying to solve. It can get even more complicated with a model that uses multiple textures.

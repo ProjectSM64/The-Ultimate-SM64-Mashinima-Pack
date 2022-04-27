@@ -1,0 +1,26 @@
+Version 0.6.1S:
+*Fixed texture coordinate errors
+*Fixed 'getProp' errors
+
+Version 0.6S:
+*All polygons in imported levels will be drawn, activating the collision map is no longer necessary
+*End Cake Picture can be edited
+*Allowed editing of up to 4 areas per level
+*Updated many object labels
+*Checksum and header are always skipped
+*Increased sky sphere size to fit extended levels
+*Fixed texture errors caused by earlier importer versions
+*Modified color picker for background
+*Fixed Mario shadow size calculation
+*Can access preferences when no ROM is loaded
+*Removed Flatworld Battlefield
+*Disabled faulty vertex coloring
+*Textures loaded from ROM by default
+*Improved visibility on texture editor screen
+*Updated many labels for consistency
+*Updated splash screen and icon
+
+Future Versions: 
+*Fix poor texture mapping in levels from earlier importer versions
+*Allow fast selecting all acts
+*Allow WASD control of camera view
