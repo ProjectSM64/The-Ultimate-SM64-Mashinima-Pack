@@ -1,0 +1,1 @@
+This BPS patch must be applied to a clean, 8MB Z64 SM64 rom.

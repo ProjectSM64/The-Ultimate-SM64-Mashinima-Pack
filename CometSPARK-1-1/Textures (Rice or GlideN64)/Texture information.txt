@@ -1,0 +1,17 @@
+Yellow square: Cape
+Striped brown thingy: Racoon tail
+Pinball looking thingy: Hammer
+Black on top, gradient on bottom: Ear Pattern (Make invisible to make ears disappear, the gradient is the pattern and the black is the inside of the ears.)
+-------------
+EXPRESSIONS ARE FLIPPED VERTICALLY
+01F573B  is Expression 3 (static eyes)
+2EFBC75A is Expression 2
+AA9768CB is Expression 1
+
+There is a texture you can dump... it says "CHR" on it,
+and it's the color of the chroma key room that is at Level ID 25 in the Level Select
+
+Here's the gameshark
+
+Level Select:
+A032D58C 0001

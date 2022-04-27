@@ -1,0 +1,13 @@
+The folder "Patch Suite" contains the CMTP Patcher exe.
+
+The folder "Sample CMTPs" includes mods some good people have provided for the first release.
+
+---------------------------------------------------------------------------------------------
+
+SOME OF THESE MODS USE THE X3 (previously known as EXMO3) GAMESHARK!!
+
+PLEASE READ THE "GAMESHARK.TXT" FILE BEFORE DOING ABSOLUTELY ANYTHING, AS THIS IS WHAT YOU NEED TO USE THE DIFFERENT EXPRESSIONS AND WEAPONS FOR X3 KAMEK, X3 MARIO AND X3 BOMBERMAN!
+
+ALSO READ THE CREDITS FILE FOR THE PEOPLE THAT SUBMITTED THEIR MODELS FOR BUNDLING IN THE FIRST RELEASE OF CMTP! THEIR SOCIAL MEDIA WILL BE AVAILABLE HERE.
+
+Made by GlitchyPSI @ Project Comet, 2020

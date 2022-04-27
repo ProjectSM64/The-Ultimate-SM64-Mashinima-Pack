@@ -1,0 +1,5 @@
+Source can be found at https://github.com/GlitchyPSIX/project64n
+
+Project64 is under the GPLv2 license.
+
+I only did minor edits. ;^P

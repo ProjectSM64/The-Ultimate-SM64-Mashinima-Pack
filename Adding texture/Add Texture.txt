@@ -1,0 +1,19 @@
+How to add textures
+
+Go to project 64 main folder (Right click, click properties, click open file location)
+
+Drag BMGlib.dll into the folder 
+
+Drag RiceVideo.dll into the PLUGIN folder
+
+Create a new folder   hires_texture   in the pluginn folder
+
+In the hires_texture folder, create a new folder (SUPER MARIO 64) IMPORTANT! THE NAME OF THE FOLDER MUST BE 
+THE EXACT NAME OF THE ROM
+
+Download texture packs compatible for SM64 (textures not included)
+drag your texture pack into the folder (SUPER MARIO 64) and extract it
+
+Open Project 64, go to settings, click Video (graphics) Plugin, and changed to Mudlord's Rice Video Build 6.1.4
+
+Go to Configure Graphics Plugin, click to texture enhancement, and click Load hi-res textures if available

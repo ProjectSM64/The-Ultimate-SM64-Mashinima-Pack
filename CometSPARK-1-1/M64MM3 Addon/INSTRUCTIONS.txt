@@ -1,0 +1,1 @@
+Put the DLL file ONLY in the Addons folder where your M64MM3 is extracted.

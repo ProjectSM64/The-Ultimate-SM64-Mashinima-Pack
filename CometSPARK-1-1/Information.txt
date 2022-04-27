@@ -1,0 +1,89 @@
+         PROJECT COMET PRESENTS
+                                        
+                                        
+                             ((         
+                              ,((       
+                                ((((    
+                            ((((((((((  
+                        ((((((((((((((( 
+                    (((((((((((((((     
+                (((((((((((((((         
+            (((((((((((((((             
+        (((((((((((((((*                
+    ((((((((((((((((                    
+ (((((((((((((((,   ((                  
+   ################/##/                 
+      #################      ##         
+        #####################           
+           #################            
+      %#%#%#%#%#%#%#%#%#%#%#%#%#%#%#    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%     
+              %%%%%%%%%%%%%%            
+            %%%%%%%%%%%%%%%%%%          
+          %%%,    %%%%%%    ,%%%        
+        #          %%%%          #      
+                   %%%%                 
+                    %%                  
+                    %%                   
+
+               CometSPARK
+
+        Developed by GlitchyPSI
+
+CUSTOM COLORS INFORMATION FOR SPARK MARIO:
+
+Custom 1 is Tint color for Racoon Tail
+Custom 2 is Tint color for Cape
+Custom 3 is Tint color for Hammer
+Custom 4 is Tint color for Glasses
+
+If you wish to make any of the tinted parts disappear, look for their textures and make them blank.
+You can do this with a video plugin.
+
+Gameshark:
+80263F2B 0000
+80251673 0000
+8025152F 0000
+80270257 0000
+8124D918 1000
+D133AFBC 0200
+8133B176 0010
+D133AFBC 0100
+8133B176 0012
+D133AFBC 0800
+8133B176 0015
+D133AFBC 0002
+8033B177 0000
+D133AFBC 0001
+8033B177 0002
+D133AFBC 0008
+8033B177 0004
+D133AFBC 0120
+8033B177 0032
+D133AFBC 0220
+8033B177 0030
+D133AFBC 0820
+8033B177 0034
+D133AFBC 0021
+8033B177 0022
+D133AFBC 0022
+8033B177 0020
+D133AFBC 0028
+8033B177 0024
+
+How to use:
+
+** Use these N64 buttons in Player 2's controller. **
+
+DPAD UP: Expression 1
+DPAD LEFT: Expression 2
+DPAD RIGHT: Expression 3 (Usually is static)
+
+SPARK Mario has Hatless. You can use the Gameshark or the following:
+C UP: Expression 1 Hatless
+C LEFT: Expression 2 Hatless
+C RIGHT: Expression 3 Hatless
+
+Some mods have a "weapon" or hand acessory. You control that with L:
+
+Hold L while using C BUTTONS or DPAD to switch to that expression *with* the weapon in hand.

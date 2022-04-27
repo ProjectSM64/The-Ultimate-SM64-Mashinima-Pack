@@ -1,0 +1,71 @@
+         PROJECT COMET PRESENTS
+                                        
+XXXXXXX       XXXXXXX   333333333333333   
+X:::::X       X:::::X  3:::::::::::::::33 
+X:::::X       X:::::X  3::::::33333::::::3
+X::::::X     X::::::X  3333333     3:::::3
+XXX:::::X   X:::::XXX              3:::::3
+   X:::::X X:::::X                 3:::::3
+    X:::::X:::::X          33333333:::::3 
+     X:::::::::X           3:::::::::::3  
+     X:::::::::X           33333333:::::3 
+    X:::::X:::::X                  3:::::3
+   X:::::X X:::::X                 3:::::3
+XXX:::::X   X:::::XXX              3:::::3
+X::::::X     X::::::X  3333333     3:::::3
+X:::::X       X:::::X  3::::::33333::::::3
+X:::::X       X:::::X  3:::::::::::::::33 
+XXXXXXX       XXXXXXX   333333333333333   
+
+      (previously known as EXMO3)
+
+    Developed by Enkal & GlitchyPSI
+
+
+Gameshark:
+80263F2B 0000
+80251673 0000
+8025152F 0000
+80270257 0000
+8124D918 1000
+D133AFBC 0200
+8133B176 0010
+D133AFBC 0100
+8133B176 0012
+D133AFBC 0800
+8133B176 0015
+D133AFBC 0002
+8033B177 0000
+D133AFBC 0001
+8033B177 0002
+D133AFBC 0008
+8033B177 0004
+D133AFBC 0120
+8033B177 0032
+D133AFBC 0220
+8033B177 0030
+D133AFBC 0820
+8033B177 0034
+D133AFBC 0021
+8033B177 0022
+D133AFBC 0022
+8033B177 0020
+D133AFBC 0028
+8033B177 0024
+
+How to use:
+
+** Use these N64 buttons in Player 2's controller. **
+
+DPAD UP: Expression 1
+DPAD LEFT: Expression 2
+DPAD RIGHT: Expression 3 (Usually is static)
+
+Some X3 mods have two sets of expressions. You control these with the C buttons:
+C UP: Expression 1 Set 2
+C LEFT: Expression 2 Set 2
+C RIGHT: Expression 3 Set 2
+
+Some X3 mods have a "weapon" or hand acessory. You control that with L:
+
+Hold L while using C BUTTONS or DPAD to switch to that expression *with* the weapon in hand.

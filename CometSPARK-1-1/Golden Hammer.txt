@@ -1,0 +1,27 @@
+The default texture works okay for a Metallic hammer but if you want a Golden texture you should download this image:
+https://comet.glitchypsi.xyz/downloads/whitemetal.png
+ 
+Remember to rename it to the name of the texture for the hammer so the graphics plugin can recognize it.
+ 
+If you want to BURN it to the ROM instead of using a graphics plugin, the address you can use in N64RIP / Texture64 is:
+11AF168
+Remember to write it in RGBA16 mode
+ 
+Use the Custom 3 color in SPARK Studio to edit hammer color. Good results include having the Base color being a strong color, like pure yellow
+ 
+Use these gameshark to enable and disable Metal Hammer
+-- Enable Metallic Hammer --
+ 
+81095BEC 0004
+81095BFC 0800
+81095BFE 0800
+81095FF4 0004
+81095FF8 B800
+ 
+-- Disable Metallic Hammer --
+ 
+81095BEC 0000
+81095BFC FFFF
+81095BFE FFFF
+81095FF4 0004
+81095FF8 B800

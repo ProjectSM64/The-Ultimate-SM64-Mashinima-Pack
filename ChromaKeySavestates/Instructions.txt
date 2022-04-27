@@ -1,0 +1,3 @@
+To Load savestates
+
+Open SM64 Rom -> System -> Load -> Select savestate (DO NOT UNCOMPRESSED THE ZIPPED FOLDERS!!)

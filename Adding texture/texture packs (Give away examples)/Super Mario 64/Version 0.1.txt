@@ -1,0 +1,24 @@
+
+***** 02 - 08 - 07 ***** VERSION 0.1 *********************************************************************
+
+Primera version del pack de texturas. 
+
+Si tienen alguna idea o sugerencia por favor comunicarmela 
+a nintemod@hotmail.com, se lo agradecere.
+Disfrutenlo.
+
+ReTexturizado Completo:
+- Nivel 1: Bob - Omb Battlefield 
+- Nivel 2: Whomp's Fortress
+- Interior 1º planta del castillo
+- Menu inicial y Presentacion 
+- Aspecto de Mario y Toad
+- Numeros y letras de colores
+
+ReTexturizado Medio:
+- Nivel 3: Jolly Roger Bay
+- Exterior del castillo
+- Cielos de los primeros niveles
+- Fuentes Grandes y Medianas 
+- Interface 
+
